@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradigm</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #003B6D;
+            color: #333;
+        }
+        header {
+            background-color: #BDBDBD;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            height: 5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #6699CC;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            flex: 1;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+    </style>
+</head>
+<body>
+    <header style="display: flex; align-items: center; justify-content: space-between; background-color: #6699CC; padding: 1rem 2rem; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); ">
+        <div style="display: flex; align-items: center; gap: 1rem; padding-left: 20px;">
+            <img src="image.png" alt="Pet Paradigm Logo" style="width: 80px; height: auto; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <div>
+                <h1 style="margin: 0; font-size: 1.8rem; font-weight: bold;">Paradigm Pet Professionals</h1>
+                <p style="margin: 0; font-size: 1rem; font-style: italic;">Evidence-based pet care advice for every pet lover</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="return show('Home-page');">Home</a></li>
+            <li><a href="#" onclick="return show('Catpage');">Cat Owners</a></li>
+            <li><a href="#" onclick="return show('Dogpage');">Dog Owners</a></li>
+            <li><a href="#" onclick="return show('Birdpage');">Bird Owners</a></li>
+            <li><a href="#" onclick="return show('Fishpage');">Fish Owners</a></li>
+            <li><a href="#" onclick="return show('Smallpage');">Small Animals</a></li>
+            <li><a href="#" onclick="return show('Faqspage');">FAQs</a></li>
+        </ul>
+    </nav>
+    <div id="Home-page">
+        <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 1rem;">
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+                <header style="font-size: 1rem; line-height: 1.6; padding: 2.2rem; border-radius: 5px; background-color: #003B6D; color: #BDBDBD; ">
+                    Pets are nature's gift to humanity. It has been scientifically proven that opening our homes 
+                    and hearts to a pet increases our longevity and improves our overall quality of life as well as the 
+                    lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care 
+                    for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working 
+                    with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations 
+                    with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, 
+                    and pet breeding professionals.
+                </header>
+                <div >
+                    <img src="/animal-photos/rabbit.png" alt="bunny" style="width: 30rem; height: 20rem; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+            <section style="flex: 1; font-size: 1.2rem; height: 35rem; max-width: 800px; padding: 1.5rem; background-color: #6699CC; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); line-height: 1.6; margin-top: 1rem;">
+                <h2 style="color: #003B6D; text-align: center; margin-bottom: 1rem;">Pet Care Advice & Adoption Resources</h2>
+                <p>Looking for basic pet care advice for the most common types of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored, evidence-based pet care to ensure the lifelong health and wellness of your new companion.</p>
+                <p>Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:</p>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;">
+                        <a href="https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources" target="_blank" style="color: #003B6D; text-decoration: none;">General Pet Resources</a>
+                    </li>
+                    <li style="margin-bottom: 0.5rem;">
+                        <a href="https://www.aspca.org/" target="_blank" style="color: #003B6D; text-decoration: none;">ASPCA</a>
+                    </li>
+                    <li style="margin-bottom: 0.5rem;">
+                        <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank" style="color: #003B6D; text-decoration: none;">Fish Rescue</a>
+                    </li>
+                    <li style="margin-bottom: 0.5rem;">
+                        <a href="https://savethesnakes.org/snakerescuecall/" target="_blank" style="color: #003B6D ; text-decoration: none;">Snake Rescue</a>
+                    </li>
+                    <li style="margin-bottom: 0.5rem;">
+                        <a href="https://ftlob.rescuegroups.org/" target="_blank" style="color: #003B6D; text-decoration: none;">Bird Rescue</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+      </div>
+        
+      <div id="Catpage" style="display:none">
+        <section style="font-size: 0.9rem; max-width: 800px; margin: 2rem auto; padding: 1.5rem; background-color: #6699CC; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); line-height: 1.6;">
+            <h2 style="color: #003B6D; text-align: center; margin-bottom: 1rem;">Caring for Your Cat</h2>
+            <p>Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds. However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless of breed.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">Zero to Four Weeks</h3>
+            <p>It is important the queen (a term commonly used for a female cat that is either pregnant or nursing) directly nurse her young if possible. Monitor your kitten’s growth closely to make sure its growth rate is progressing steadily. If any kitten is not growing at a sufficient rate, a caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some reasons why kittens might not gain weight appropriately include:</p>
+            <ul style="list-style-type: disc; margin-left: 1.5rem;">
+                <li>Too many other siblings are competing for mom's milk</li>
+                <li>Gastrointestinal disease</li>
+                <li>Environmental conditions such as extreme heat or cold, or unsanitary conditions</li>
+            </ul>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">Four Weeks to One Year</h3>
+            <p>Kittens can start being introduced to soft wet kitten food typically around three to four weeks after birth. According to the ASPCA, kittens at this age should eat half to one cup of dry kitten food or six to nine ounces of wet kitten food per day. If your kitten has difficulties eating hard food, a small amount of water can be added to soften the food. Cat food optimized for kittens provides the additional nutrients needed for growth, energy, and wellness. Always consult with your veterinarian for recommendations.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">One Year to Seven Years</h3>
+            <p>This age is when kittens reach the cat stage and do not need as many nutrients. At this age, their level of activity decreases, and so does their metabolism. It is not recommended to leave food out for the cats all day. Instead, provide food a couple of times a day so they eat meals rather than snacking throughout the day. This practice reduces the risk of obesity and other weight-related feline ailments.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">Seven Years and More</h3>
+            <p>Much like many living organisms, the body begins to deteriorate and experience a lot of changes. Cats at this age should eat less fats and calories and more quality proteins. When purchasing packaged foods for your cat, look for food that states a particular protein (such as "salmon") and not just a category (such as fish). This ensures higher quality proteins for your senior cat.</p>
+        </section>
+      </div>
+
+      <div id="Dogpage" style="display:none">
+        <section style="font-size: 0.9rem; max-width: 800px; margin: 2rem auto; padding: 1.5rem; background-color: #6699CC; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); line-height: 1.6;">
+            <h2 style="color: #003B6D; text-align: center; margin-bottom: 1rem;">Caring for Your Dog</h2>
+            <p>The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as reduced blood pressure and improved lipid profiles. If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise. In this page, you will find more information about how to care for your pets throughout the various stages of their lives.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">Diet & Exercise</h3>
+            <p>Throughout dogs’ lifespans, they should generally be fed fewer meals as they mature. Puppies should be nursed the first two months, then introduced to three meals per day when they are about three to six months old. Their food intake should be reduced to two meals per day when they are six months to one year old and finally reduced to one meal after they reach one year old. Dogs’ bodies are composed of 60–70% water, and just a 10% decrease in body water can cause illness. Always ensure your dog stays hydrated!</p>
+            <p>Much like humans, dogs need a healthy level of activity to keep their organs healthy, as well as sun and fresh air. The recommended time for exercise varies by breed and size, but generally ranges from 30–120 minutes per day. Brisk walks, playtime, or age-appropriate toys can help keep your dog active. Be sure to supervise playtime to avoid choking hazards.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">Grooming & Handling</h3>
+            <p>Keeping your furry family member clean is important to its health. Brush frequently to reduce shedding and prevent matted fur. Check for ticks and fleas, especially after visiting wooded areas. Bathing is essential but ensure you rinse all soap thoroughly to avoid rashes. Use soaps formulated for dogs to prevent allergic reactions. When handling your dog, support its body properly—small dogs should be cradled with one hand under the chest and the other supporting the back, while large dogs should be lifted with both arms supporting the chest and rear.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">Vaccinations & Medications</h3>
+            <p>Always consult with your veterinarian regarding vaccinations. Core vaccines typically include protection against hepatitis, rabies, and parvovirus. Additional vaccines may be recommended based on your dog’s environment, such as Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria. Regular checkups and preventive care are key to your dog’s health.</p>
+        </section>
+    </div> 
+
+    <div id="Birdpage" style="display:none">
+        <section style="font-size: 0.9rem; max-width: 800px; margin: 2rem auto; padding: 1.5rem; background-color: #6699CC; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); line-height: 1.6;">
+            <h2 style="color: #003B6D; text-align: center; margin-bottom: 1rem;">Caring for Your Bird</h2>
+            <p>Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches long and a little over 1/20 of an ounce) to as large as an ostrich. While most birds fly, there are some that don't. Birds are amazing and each breed is unique in its own way, particularly when it comes to their relational needs and well-being.</p>
+            <p>Unfortunately, birds can experience sadness and depression just like humans. A number of root causes may be responsible for your bird's depression, such as an illness (either physical or mental), losing its companion, or increasingly becoming bored. Some signs to help identify if your bird is experiencing depression may include the following:</p>
+            <ul style="list-style-type: disc; margin-left: 1.5rem;">
+                <li>Reduced appetite</li>
+                <li>Becoming increasingly irritable</li>
+                <li>Aggressive behavior</li>
+                <li>Songs have a different, more solemn tone</li>
+            </ul>
+            <p>Be sure to tell your veterinarian if you see signs of any of these symptoms. Just like many illnesses, identifying and treating the symptoms earlier may drastically increase the lifespan of your birdie.</p>
+        </section>
+</div>
+
+
+    <div id="Fishpage" style="display:none">
+        <section style="font-size: 0.9rem; max-width: 800px; margin: 2rem auto; padding: 1.5rem; background-color: #6699CC; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); line-height: 1.6;">
+            <h2 style="color: #003B6D; text-align: center; margin-bottom: 1rem;">Caring for Your Fish</h2>
+            <p>Fish represent a broad class of aquatic animals that can live in fresh or saltwater, depending on the species. Bringing fish into your home can be an exciting hobby, especially if you intend to breed them, and the presence of a fish tank in your home can induce feelings of peace and tranquility.</p>
+            <p>Whether you are bringing your fish home for the first time or maintaining your aquarium, it is important to test your water once per week to ensure it is free from toxins that can harm your fish.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">Freshwater Fish</h3>
+            <p>There are several freshwater fish to choose from when setting up your aquarium, but it is best to consult with a “Pexpert” to ensure your fish will get along! No matter the species, ensure your fish are suited for a freshwater environment by investing in a water testing kit. Follow these general water chemistry guidelines to ensure your fish will adapt well to your aquarium and avoid ingesting toxins that can harm or kill your fish:</p>
+            <ul style="list-style-type: disc; margin-left: 1.5rem;">
+                <li><strong>pH Level:</strong> 6.8–7.6 (7.0 is considered neutral)</li>
+                <li><strong>Ammonia:</strong> Any level above zero is harmful to fish</li>
+                <li><strong>Nitrates:</strong> 5 to 10 ppm</li>
+                <li><strong>Nitrites:</strong> Less than 0.5 ppm</li>
+            </ul>
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">Saltwater Fish</h3>
+            <p>Saltwater fish also offer several options when it comes to choosing among species for your aquarium. As with freshwater fish, consult with a “Pexpert” to ensure your fish will get along and are suited for a saltwater environment. Follow these general guidelines to avoid dangerous water conditions and ensure the appropriate salinity level for your fish:</p>
+            <ul style="list-style-type: disc; margin-left: 1.5rem;">
+                <li><strong>Salinity:</strong> 1.020–1.028 sg</li>
+                <li><strong>pH Level:</strong> 7.6–8.4 (7.0 is considered neutral)</li>
+                <li><strong>Ammonia:</strong> Any level above 0.1 ppm requires attention</li>
+                <li><strong>Nitrates:</strong> 10 to 40 ppm</li>
+                <li><strong>Nitrites:</strong> Less than 0.2 ppm</li>
+            </ul>
+            <p>For more information on making your tap water safe for your fish, please visit:</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 0.5rem;">
+                    <a href="http://www.theaquariumwiki.org/wiki/How_to_make_tap_water_safe_for_fish" target="_blank" style="color: #003B6D; text-decoration: none;">How to Make Tap Water Safe for Fish</a>
+                </li>
+                <li style="margin-bottom: 0.5rem;">
+                    <a href="http://fishbase.org/home.htm" target="_blank" style="color: #003B6D; text-decoration: none;">FishBase</a>
+                </li>
+            </ul>
+
+        </section>
+    </div>
+
+
+
+
+    <div id="Smallpage" style="display:none">
+    <section style="font-size: 0.9rem; max-width: 800px; margin: 2rem auto; padding: 1.5rem; background-color: #6699CC; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); line-height: 1.6;">
+        <h2 style="color: #003B6D; text-align: center; margin-bottom: 1rem;">Small Animals: A Perfect Companion</h2>
+        <p>Sometimes we want a pet in our life but think it’s impossible because we are not home enough to take care of it, or we don’t have enough room. Consider adopting a small animal such as a hermit crab, mouse, gerbil, hamster, guinea pig, or even a chinchilla! Depending on which type of animal you adopt, you can provide a comfortable environment using anything from small to large cages or glass aquariums.</p>
+        <p>You will also need to provide amenities for your new pet, such as bedding or substrate, toys, an exercise wheel, a water dish or drip bottle, a food dish, and grooming equipment. You also need to consider if your new pet will need a friend or if it will be happy living alone. Our “Pexperts” are here to help you decide which pet is right for you and how to provide them with a happy home. Schedule a consultation with us today!</p>
+        <h3 style="color: #003B6D; margin-top: 1.5rem;">Helpful Resources</h3>
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;">
+                <a href="https://www.animalhumanesociety.org/adoption/guinea-pig-care" target="_blank" style="color: #003B6D; text-decoration: none;">Guinea Pig Care</a>
+            </li>
+            <li style="margin-bottom: 0.5rem;">
+                <a href="https://www.bluecross.org.uk/pet-advice/caring-your-mouse" target="_blank" style="color: #003B6D; text-decoration: none;">Mouse Care</a>
+            </li>
+            <li style="margin-bottom: 0.5rem;">
+                <a href="https://pethermitcrabs.org/cage-habitat/" target="_blank" style="color: #003B6D; text-decoration: none;">Hermit Crab Care</a>
+            </li>
+            <li style="margin-bottom: 0.5rem;">
+                <a href="https://chinchillacare.org/cage-habitat/" target="_blank" style="color: #003B6D; text-decoration: none;">Chinchilla Care</a>
+            </li>
+            <li style="margin-bottom: 0.5rem;">
+                <a href="https://petgerbils.org/cage-habitat/" target="_blank" style="color: #003B6D; text-decoration: none;">Gerbil Care</a>
+            </li>
+            <li style="margin-bottom: 0.5rem;">
+                <a href="https://www.pdsa.org.uk/taking-care-of-your-pet/looking-after-your-pet/small-pets/the-ideal-home-for-your-hamster" target="_blank" style="color: #4CAF50; text-decoration: none;">Hamster Care</a>
+            </li>
+        </ul>
+    </section>
+
+    </div>
+
+
+
+
+    <div id="Faqspage" style="display:none">
+        <h2 style="color: #003B6D; text-align: center; margin-bottom: 1rem;">Frequently Asked Questions</h2>
+        <section style="font-size: 0.9rem; max-width: 800px; margin: 2rem auto; padding: 1.5rem; background-color: #6699CC; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); line-height: 1.6;">
+            <p>Our “Pexperts” typically encounter the following questions when consulting with prospective “pet parents”:</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">What is the best way to rid my dog or cat of fleas?</h3>
+            <p>Sometimes our furry friends pick up hitchhikers that make them very itchy and uncomfortable. If gone unchecked, fleas can infest your home, making it even more difficult to rid them from your loved one’s coat. To eliminate fleas, choose a shampoo specially formulated to kill fleas and be sure to read and follow all instructions on the label. Repeat treatment as necessary until your pet is free of fleas; if you see skin irritation, stop use immediately and contact your local vet.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">How long can I expect my pet bird to live?</h3>
+            <p>The answer can vary widely depending on the type of bird, the size, the environment, and of course, mother nature. Assuming all is well in the external factors that are out of the owner's control, cockatiels and budgies live up to 20 years old on average. However, many parrot variations are known to live nearly an astounding 100 years! As with many living organisms, longevity can be increased by keeping annual veterinarian visits, maintaining a healthy diet, and keeping your feathery friend's environment sanitary.</p>
+
+            <h3 style="color: #003B6D; margin-top: 1.5rem;">How often should I feed my pet snake?</h3>
+            <p>Most snakes eat one to two times per week, depending on their age, size, and activity level. Female snakes often increase their food intake as breeding season gets underway. Some snakes can go as long as two weeks before needing their next meal; this is normal. However, if your snake has not eaten in two or three weeks and seems lethargic, reach out to your local vet to determine if your snake might be ill or injured.</p>
+        </section>
+
+
+    </div>
+
+
+    
+    <section>   
+        <p style="font-size: 0.985rem; max-width: 800px; margin: 2rem auto; padding: 1.5rem; border-radius: 8px; line-height: 2.6; color:#BDBDBD; text-align: center;">
+            We are also happy to help you navigate the adoption process! We will guide you through each step in 
+            the process—from determining which type of pet is best suited for your family and home environment, to
+            completing the necessary paperwork, to bringing your new loved one home. Please fill out our contact 
+            form to request a consultation. We will contact you within 48 hours to schedule a consultation. All 
+            fields are required.
+        </p>
+
+            <form style="font-size: 0.9rem; max-width: 600px; margin: 2.5rem auto; padding: 1.5rem; background-color: #f0f0f0; padding-right: 35px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" action="#" method="post">
+                <h2 style="color: #003B6D; text-align: center; margin-bottom: 1rem;">Schedule a consultation today!</h2>
+                <label for="name" style="display: block; margin-bottom: 0.5rem;">Your Name:</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label for="phone" style="display: block; margin-bottom: 0.5rem;">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label for="email" style="display: block; margin-bottom: 0.5rem;">Email Address:</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label for="timezone" style="display: block; margin-bottom: 0.5rem;">Time Zone:</label>
+                <select id="timezone" name="timezone" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+                    <option value="" disabled selected>Select your time zone</option>
+                    <option value="EST">Eastern Standard Time (EST)</option>
+                    <option value="CST">Central Standard Time (CST)</option>
+                    <option value="MST">Mountain Standard Time (MST)</option>
+                    <option value="PST">Pacific Standard Time (PST)</option>
+                </select>
+
+                <label for="pet-name" style="display: block; margin-bottom: 0.5rem;">Pet's Name:</label>
+                <input type="text" id="pet-name" name="pet-name" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label for="pet-type" style="display: block; margin-bottom: 0.5rem;">Pet's Type:</label>
+                <input type="text" id="pet-type" name="pet-type" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+
+                <label for="pet-age" style="display: block; margin-bottom: 0.5rem;">Pet's Age:</label>
+                <input type="number" id="pet-age" name="pet-age" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+
+                <button type="submit" style="background-color: #4CAF50; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; width: 100%;">Submit</button>
+            </form>
+    </section>
+    <footer style="background-color: #003B6D; color: white; text-align: center; padding: 1rem; position: static; width: 100%; bottom: 0;">
+        
+        
+        <p>&copy; 2025 Pet Paradigm Professionals. All rights reserved.</p>
+
+    <script>
+        function show(pageToShow) {
+            const pages = document.querySelectorAll('div[id$="page"]');
+            pages.forEach(page => page.style.display = 'none');
+            document.getElementById(pageToShow).style.display = 'block';
+            return false; // Prevent default anchor behavior
+        }
+    </script>
+</body>
+</html>
